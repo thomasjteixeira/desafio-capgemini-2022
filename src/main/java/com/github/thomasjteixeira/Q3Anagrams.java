@@ -5,8 +5,21 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Q3Anagrams {
-    public static int numberOfAnagrams(String s) {
-        int anagrams = 0;
+    public static int numberOfAnagramsInAString(String s) {
+        int numberOfAnagrams = 0;
+        List<String> substringList = createSubStringsArray(s);
+
+        for (int i = 0; i < substringList.size(); i++) {
+            for (int j = i + 1; j < substringList.size(); j++) {
+                if(isAnagram(substringList.get(i), substringList.get(j))){
+                    numberOfAnagrams++;
+                }
+            }
+        }
+        return numberOfAnagrams;
+    }
+
+    private static List<String> createSubStringsArray(String s) {
         List<String> substringList = new ArrayList<>();
         for (int i = 0; i <= s.length(); i++) {
             for (int j = i+1; j <= s.length(); j++) {
@@ -14,15 +27,7 @@ public class Q3Anagrams {
                 substringList.add(substring);
             }
         }
-
-        for (int i = 0; i < substringList.size(); i++) {
-            for (int j = i + 1; j < substringList.size(); j++) {
-                if(isAnagram(substringList.get(i), substringList.get(j))){
-                    anagrams++;
-                }
-            }
-        }
-        return anagrams;
+        return substringList;
     }
 
     public static boolean isAnagram(String s1, String s2) {
