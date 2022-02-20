@@ -3,7 +3,7 @@ package com.github.thomasjteixeira;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class Q2passwordTest {
+public class Q2PasswordTest {
 
     @Test
     public void minimumCharForPasswordToBeStrongTest1(){
