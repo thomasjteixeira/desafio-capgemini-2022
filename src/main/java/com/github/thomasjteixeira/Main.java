@@ -21,7 +21,7 @@ public class Main {
 
             if(input == 1){
                 System.out.println("----------------------------------------------------------------");
-                System.out.println("Q1 - Digite um número do tamanho da arvore ou -1 para sair");
+                System.out.println("Q1 Árvore de Natal - Digite um número do tamanho da arvore ou -1 para sair");
                 System.out.println("----------------------------------------------------------------");
                 int n = scanner.nextInt();
 
@@ -32,7 +32,7 @@ public class Main {
 
             }else if(input == 2){
                 System.out.println("----------------------------------------------------------------");
-                System.out.println("Q2 - Digite um senha ou -1 para sair");
+                System.out.println("Q2 Password - Digite um senha ou -1 para sair");
                 System.out.println("----------------------------------------------------------------");
                 String password = scanner.nextLine();
 
@@ -42,7 +42,7 @@ public class Main {
                 System.out.println(passwordStrong);
             }else if(input == 3){
                 System.out.println("----------------------------------------------------------------");
-                System.out.println("Q3 - Digite um anagrama ou -1 para sair");
+                System.out.println("Q3 Anagramas - Digite um anagrama ou -1 para sair");
                 System.out.println("----------------------------------------------------------------");
                 String anagrama = scanner.nextLine();
 
