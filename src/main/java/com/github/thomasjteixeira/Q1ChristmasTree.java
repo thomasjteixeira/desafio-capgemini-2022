@@ -5,9 +5,10 @@ public class Q1ChristmasTree {
         int aux = n;
         String tree = "";
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                if(j < aux - 1){
 
+            for (int j = 0; j < n; j++) {
+
+                if(j < aux - 1){
                     tree+=" ";
                 }else{
                     tree+="*";
