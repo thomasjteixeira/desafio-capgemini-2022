@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class TestQ3Anagrams {
+public class Q3AnagramsTest {
 
     @Test
     public void NumberOfAnagramsInTheSubstringTest1(){
